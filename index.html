@@ -2,26 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>B.Pharm CA Practical - Personal Information</title>
+    <title>B.Pharm CA Practical - Personal Info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Important for mobile -->
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #eef2f3;
-            padding: 30px;
+            margin: 0;
+            padding: 20px;
         }
 
         .container {
-            background: #fff;
-            padding: 25px;
-            max-width: 700px;
+            background-color: #fff;
+            max-width: 600px;
             margin: auto;
-            border-radius: 10px;
+            padding: 20px;
+            border-radius: 12px;
             box-shadow: 0 0 8px rgba(0,0,0,0.1);
         }
 
         h1, h2 {
             text-align: center;
-            color: #2c3e50;
+            color: #007BFF;
         }
 
         .info {
@@ -30,20 +32,36 @@
         }
 
         .info label {
+            display: block;
             font-weight: bold;
-            display: inline-block;
-            width: 200px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .info span {
+            display: block;
+            color: #555;
         }
 
         .footer {
             margin-top: 30px;
             text-align: center;
             font-size: 14px;
-            color: #777;
+            color: #888;
         }
 
-        hr {
-            margin: 20px 0;
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .info label {
+                font-size: 15px;
+            }
         }
     </style>
 </head>
@@ -52,64 +70,68 @@
 <div class="container">
     <h1>B.Pharm 2nd Semester</h1>
     <h2>Computer Applications Practical</h2>
-    <hr>
 
     <div class="info">
-        <label>Student Name:</label> Utkarsh Yadav
-    </div>
-    <div class="info">
-        <label>Roll Number:</label> 123456 (example)
-    </div>
-    <div class="info">
-        <label>Enrollment Number:</label> BPH2025/001 (example)
-    </div>
-    <div class="info">
-        <label>Semester:</label> 2nd
-    </div>
-    <div class="info">
-        <label>Course:</label> Bachelor of Pharmacy (B.Pharm)
-    </div>
-    <div class="info">
-        <label>College Name:</label> [Your College Name]
-    </div>
-    <div class="info">
-        <label>Subject Name:</label> Computer Applications
-    </div>
-    <div class="info">
-        <label>Practical Title:</label> Create a Web Page to Show Personal Information
+        <label>Student Name:</label>
+        <span>Utkarsh Yadav</span>
     </div>
 
-    <hr>
+    <div class="info">
+        <label>Roll Number:</label>
+        <span>123456</span>
+    </div>
 
-    <h2>Personal Information</h2>
     <div class="info">
-        <label>Full Name:</label> Utkarsh Yadav
+        <label>Enrollment Number:</label>
+        <span>BPH2025/001</span>
     </div>
+
     <div class="info">
-        <label>Age:</label> 18
+        <label>Course:</label>
+        <span>Bachelor of Pharmacy (B.Pharm)</span>
     </div>
+
     <div class="info">
-        <label>Gender:</label> Male
+        <label>Semester:</label>
+        <span>2nd</span>
     </div>
+
     <div class="info">
-        <label>Height:</label> 169 cm
+        <label>Subject:</label>
+        <span>Computer Applications</span>
     </div>
+
     <div class="info">
-        <label>Weight:</label> 46 kg
+        <label>Practical Title:</label>
+        <span>Create a Web Page to Show Personal Information</span>
     </div>
+
     <div class="info">
-        <label>Email:</label> utkarsh@example.com
+        <label>Age:</label>
+        <span>18</span>
     </div>
+
     <div class="info">
-        <label>Mobile:</label> +91-9876543210
+        <label>Gender:</label>
+        <span>Male</span>
+    </div>
+
+    <div class="info">
+        <label>Height:</label>
+        <span>169 cm</span>
+    </div>
+
+    <div class="info">
+        <label>Weight:</label>
+        <span>46 kg</span>
     </div>
 
     <div class="footer">
-        <hr>
-        <p>Submitted to: [Teacher’s Name]</p>
+        <p>Submitted to: [Teacher's Name]</p>
         <p>Submission Date: 01/07/2025</p>
     </div>
 </div>
 
 </body>
 </html>
+
